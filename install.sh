@@ -12,7 +12,7 @@ sudo docker image build --tag jupyter/base-notebook:pznd .
 
 #download repository with notebooks
 echo "Download repository with notebooks..."
-#git clone https://github.com/piona/pznd
+git clone https://github.com/piona/pznd
 
 #run created docker container
 sudo docker run -p 8888:8888 -v ./pznd:/home/jovyan/work jupyter/base-notebook:pznd
